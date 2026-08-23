@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#3a352b"/>
+  <rect x="16" y="16" width="768" height="968" fill="none" stroke="#e6c15a" stroke-width="3" stroke-dasharray="14 10"/>
+  <g transform="translate(400,380)" stroke="#e6c15a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-90 -120 -180 -60 -140 10 -90 -25 V180 H90 V-25 L140 10 180 -60 90 -120 45 -150 A55 55 0 0 1 -45 -150 Z"/>
+  </g>
+  <text x="400" y="640" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#f4efe2" text-anchor="middle">FOTO DO PRODUTO</text>
+  <text x="400" y="695" font-family="Arial, sans-serif" font-size="24" fill="#e6c15a" text-anchor="middle">Jaleco 7/8 Manga Longa</text>
+  <text x="400" y="740" font-family="Arial, sans-serif" font-size="20" fill="#b8b0a0" text-anchor="middle">Substituir por foto real</text>
+</svg>

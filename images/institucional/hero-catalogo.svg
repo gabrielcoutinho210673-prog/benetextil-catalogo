@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+  <rect width="900" height="1100" fill="#ece1c9"/>
+  <rect x="18" y="18" width="864" height="1064" fill="none" stroke="#8c6d1a" stroke-width="3" stroke-dasharray="14 10"/>
+  <g transform="translate(450,470)" stroke="#8c6d1a" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-100 -130 -200 -65 -155 15 -100 -25 V200 H100 V-25 L155 15 200 -65 100 -130 50 -165 A65 65 0 0 1 -50 -165 Z"/>
+  </g>
+  <text x="450" y="700" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#191509" text-anchor="middle">FOTO DE PRODUÇÃO</text>
+  <text x="450" y="748" font-family="Arial, sans-serif" font-size="24" fill="#6b6250" text-anchor="middle">/ CATÁLOGO EM DESTAQUE</text>
+  <text x="450" y="788" font-family="Arial, sans-serif" font-size="19" fill="#8c8471" text-anchor="middle">Substituir por foto real da Benetextil</text>
+</svg>

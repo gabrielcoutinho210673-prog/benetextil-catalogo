@@ -1,0 +1,9 @@
+# Vercel
+.vercel
+
+# Config local de desenvolvimento (servidor de preview)
+.claude
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db

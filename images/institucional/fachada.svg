@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000">
+  <rect width="900" height="1000" fill="#3a352b"/>
+  <rect x="18" y="18" width="864" height="964" fill="none" stroke="#e6c15a" stroke-width="3" stroke-dasharray="14 10"/>
+  <circle cx="450" cy="380" r="130" fill="none" stroke="#e6c15a" stroke-width="5"/>
+  <text x="450" y="368" font-family="Arial, sans-serif" font-size="34" fill="#f4efe2" text-anchor="middle" font-weight="bold">BENE</text>
+  <text x="450" y="408" font-family="Arial, sans-serif" font-size="22" letter-spacing="4" fill="#e6c15a" text-anchor="middle">TEXTIL</text>
+  <text x="450" y="600" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#f4efe2" text-anchor="middle">FOTO DA FACHADA / ATELIÊ</text>
+  <text x="450" y="646" font-family="Arial, sans-serif" font-size="20" fill="#b8b0a0" text-anchor="middle">Substituir por foto real da produção</text>
+</svg>

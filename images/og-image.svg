@@ -1,0 +1,8 @@
+<!-- TODO: substituir por imagem real (1200x630px, JPG/PNG) para compartilhamento em redes sociais -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#C9A227" stroke-width="2"/>
+  <text x="600" y="300" font-family="Georgia, serif" font-size="72" fill="#C9A227" text-anchor="middle" font-weight="bold">BENETEXTIL</text>
+  <text x="600" y="360" font-family="Georgia, serif" font-size="30" letter-spacing="6" fill="#e8e2d0" text-anchor="middle">CONFECÇÕES</text>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="20" fill="#8a8a8a" text-anchor="middle">Catálogo de produtos</text>
+</svg>
