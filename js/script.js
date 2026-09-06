@@ -20,28 +20,28 @@ const WHATSAPP_MENSAGENS = {
    demonstrar o layout e o filtro por categoria.
    -------------------------------------------------------------------------- */
 const CATEGORIAS = [
-  { id: "moletons", nome: "Moletons" },
-  { id: "camisetas-igreja", nome: "Camisetas para Festividade Igreja" },
+  {
+    id: "moletons",
+    nome: "Moletons",
+    notaTitulo: "Modelos ilustrativos: sua ideia, nossa produção.",
+    notaTexto:
+      "Cada peça exibida é um exemplo do nosso padrão de acabamento: moletons flanelados premium, costura reforçada e personalização total (estampas, bordados, detalhes no forro e punhos). Não vendemos modelos prontos: criamos um design 100% exclusivo para você.",
+  },
+  { id: "camisetas-igreja", nome: "Camisetas" },
   { id: "polos", nome: "Polos" },
   { id: "jaquetas", nome: "Jaquetas Personalizadas" },
-  { id: "camisa-gola-italiana", nome: "Camisa Gola Italiana" },
-  { id: "jalecos", nome: "Jalecos 7/8 e 3/4 Manga Longa" },
-  { id: "calca-elastico-total", nome: "Calça Elástico Total" },
-  { id: "calca-meio-elastico", nome: "Calça 1/2 Elástico" },
-  { id: "calca-faixa-refletiva", nome: "Calça com Faixa Refletiva" },
-  { id: "camisa-social", nome: "Camisa Social" },
-  { id: "camiseta-feminina", nome: "Camiseta Feminina" },
+  { id: "domas", nome: "Domas" },
 ];
 
 const PRODUTOS = [
   {
-    id: "personalizado-01",
+    id: "personalizado-07",
     nome: "Moletom Canguru Personalizado",
     categoria: "moletons",
     // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
     // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
-    tecido: "Exemplo de estilo de personalização: moletom flanelado com estampa.",
-    imagem: "images/produtos/personalizado-01-moletom.png",
+    tecido: "Exemplo de estilo de personalização: moletom flanelado com estampa frontal.",
+    imagem: "images/produtos/personalizado-07-moletom-t26.jpg",
   },
   {
     id: "personalizado-06",
@@ -53,13 +53,76 @@ const PRODUTOS = [
     imagem: "images/produtos/personalizado-06-moletom-cream.jpg",
   },
   {
-    id: "personalizado-02",
-    nome: "Camiseta Personalizada Dry Fit",
+    id: "personalizado-08",
+    nome: "Moletom de Formatura Personalizado (Verso Azul)",
+    categoria: "moletons",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: moletom de turma/formatura com estampa nas costas.",
+    imagem: "images/produtos/personalizado-08-formatura-verso-azul.jpg",
+  },
+  {
+    id: "personalizado-09",
+    nome: "Moletom de Formatura Personalizado (Verso Bordô)",
+    categoria: "moletons",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: moletom de turma/formatura com estampa nas costas.",
+    imagem: "images/produtos/personalizado-09-formatura-verso-bordo.jpg",
+  },
+  {
+    id: "personalizado-10",
+    nome: "Moletom de Formatura Personalizado (Frente Azul)",
+    categoria: "moletons",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: moletom de turma/formatura com estampa frontal.",
+    imagem: "images/produtos/personalizado-10-formatura-frente-azul.jpg",
+  },
+  {
+    id: "personalizado-11",
+    nome: "Camiseta Personalizada Branca",
     categoria: "camisetas-igreja",
     // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
     // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
-    tecido: "Exemplo de estilo de personalização: camiseta dry fit com estampa e bordado.",
-    imagem: "images/produtos/personalizado-02-camiseta.jpg",
+    tecido: "Exemplo de estilo de personalização: camiseta branca com estampa frontal.",
+    imagem: "images/produtos/personalizado-11-camiseta-branca.jpg",
+  },
+  {
+    id: "personalizado-12",
+    nome: "Camiseta Personalizada Bordô",
+    categoria: "camisetas-igreja",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: camiseta bordô com estampa frontal.",
+    imagem: "images/produtos/personalizado-12-camiseta-bordo.jpg",
+  },
+  {
+    id: "personalizado-13",
+    nome: "Camiseta Personalizada Preta",
+    categoria: "camisetas-igreja",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: camiseta preta com estampa frontal.",
+    imagem: "images/produtos/personalizado-13-camiseta-preta.jpg",
+  },
+  {
+    id: "personalizado-16",
+    nome: "Camiseta Personalizada Azul Marinho (Frente)",
+    categoria: "camisetas-igreja",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: camiseta azul marinho com gola contrastante e estampa frontal.",
+    imagem: "images/produtos/personalizado-16-camiseta-20anos-frente.jpg",
+  },
+  {
+    id: "personalizado-17",
+    nome: "Camiseta Personalizada Azul Marinho (Verso)",
+    categoria: "camisetas-igreja",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: camiseta azul marinho com gola contrastante e estampa nas costas.",
+    imagem: "images/produtos/personalizado-17-camiseta-ecc-verso.jpg",
   },
   {
     id: "personalizado-05",
@@ -69,6 +132,15 @@ const PRODUTOS = [
     // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
     tecido: "Exemplo de estilo de personalização: polo piquet com logo bordado/estampado.",
     imagem: "images/produtos/personalizado-05-polo.jpg",
+  },
+  {
+    id: "personalizado-19",
+    nome: "Camisa Polo Personalizada Marinho",
+    categoria: "polos",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: polo piquet marinho com gola e punhos contrastantes.",
+    imagem: "images/produtos/personalizado-19-polo-marinho.jpg",
   },
   {
     id: "personalizado-03",
@@ -88,62 +160,32 @@ const PRODUTOS = [
     tecido: "Exemplo de estilo de personalização: jaqueta corporativa com gola contrastante e logo bordado.",
     imagem: "images/produtos/personalizado-04-jaqueta-cinza.jpg",
   },
-  // Tipos de uniforme confirmados pelo cliente (nomes reais). Faltam as fotos reais de cada peça.
   {
-    id: "uniforme-01",
-    nome: "Camisa Gola Italiana",
-    categoria: "camisa-gola-italiana",
-    tecido: "[TODO: confirmar tecido/composição]",
-    imagem: "images/produtos/uniforme-camisa-gola-italiana.svg",
+    id: "personalizado-14",
+    nome: "Jaleco de Cozinha Personalizado (Verso)",
+    categoria: "domas",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: jaleco de cozinha com logo estampado nas costas.",
+    imagem: "images/produtos/personalizado-14-jaleco-cozinha-verso.jpg",
   },
   {
-    id: "uniforme-02",
-    nome: "Jaleco 7/8 Manga Longa",
-    categoria: "jalecos",
-    tecido: "[TODO: confirmar tecido/composição]",
-    imagem: "images/produtos/uniforme-jaleco-7-8.svg",
+    id: "personalizado-15",
+    nome: "Jaleco de Cozinha Personalizado (Frente)",
+    categoria: "domas",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: jaleco de cozinha com detalhes em vivo e logo bordado.",
+    imagem: "images/produtos/personalizado-15-jaleco-cozinha-frente.jpg",
   },
   {
-    id: "uniforme-03",
-    nome: "Jaleco 3/4 Manga Longa",
-    categoria: "jalecos",
-    tecido: "[TODO: confirmar tecido/composição]",
-    imagem: "images/produtos/uniforme-jaleco-3-4.svg",
-  },
-  {
-    id: "uniforme-04",
-    nome: "Calça Elástico Total",
-    categoria: "calca-elastico-total",
-    tecido: "[TODO: confirmar tecido/composição]",
-    imagem: "images/produtos/uniforme-calca-elastico-total.svg",
-  },
-  {
-    id: "uniforme-05",
-    nome: "Calça 1/2 Elástico",
-    categoria: "calca-meio-elastico",
-    tecido: "[TODO: confirmar tecido/composição]",
-    imagem: "images/produtos/uniforme-calca-meio-elastico.svg",
-  },
-  {
-    id: "uniforme-06",
-    nome: "Calça com Faixa Refletiva",
-    categoria: "calca-faixa-refletiva",
-    tecido: "[TODO: confirmar tecido/composição]",
-    imagem: "images/produtos/uniforme-calca-faixa-refletiva.svg",
-  },
-  {
-    id: "uniforme-07",
-    nome: "Camisa Social",
-    categoria: "camisa-social",
-    tecido: "[TODO: confirmar tecido/composição]",
-    imagem: "images/produtos/uniforme-camisa-social.svg",
-  },
-  {
-    id: "uniforme-08",
-    nome: "Camiseta Feminina",
-    categoria: "camiseta-feminina",
-    tecido: "[TODO: confirmar tecido/composição]",
-    imagem: "images/produtos/uniforme-camiseta-feminina.svg",
+    id: "personalizado-18",
+    nome: "Jaleco de Trabalho Personalizado Cinza",
+    categoria: "domas",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: jaleco de trabalho cinza com gola contrastante, bolso e logo estampado.",
+    imagem: "images/produtos/personalizado-18-jaleco-trabalho-cinza.jpg",
   },
 ];
 
@@ -165,69 +207,92 @@ function preencherLinksGenericos() {
 }
 
 /* --------------------------------------------------------------------------
-   Renderização dos filtros de categoria
+   HTML de um card de produto (usado no resultado de categoria).
    -------------------------------------------------------------------------- */
-function renderFiltros() {
-  const wrap = document.getElementById("filtros");
-  wrap.innerHTML = CATEGORIAS.map(
-    (cat) => `<button class="filtro-btn" data-categoria="${cat.id}">${cat.nome}</button>`
-  ).join("");
+function criarCardProduto(p) {
+  const nomeCategoria = CATEGORIAS.find((c) => c.id === p.categoria)?.nome || p.categoria;
+  const mensagem = `Olá! Tenho interesse na peça "${p.nome}" do catálogo da Benetextil. Poderiam me passar mais informações?`;
+  const linkWpp = montarLinkWhatsapp(mensagem);
+
+  return `
+    <article class="produto-card" data-produto-id="${p.id}">
+      <div class="produto-media">
+        <img src="${p.imagem}" alt="${p.nome}" loading="lazy" width="800" height="1000" />
+      </div>
+      <div class="produto-info">
+        <span class="produto-categoria">${nomeCategoria}</span>
+        <h3 class="produto-nome">${p.nome}</h3>
+        <p class="produto-tecido">${p.tecido}</p>
+        <a class="btn btn-whatsapp btn-sm" href="${linkWpp}" target="_blank" rel="noopener">
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </article>
+  `;
+}
+
+/* --------------------------------------------------------------------------
+   Cards visuais de categoria (foto de fundo + nome) — substituem os botões
+   de texto simples. Cada card usa a foto do primeiro produto cadastrado
+   naquela categoria.
+   -------------------------------------------------------------------------- */
+function renderCategoriaCards() {
+  const wrap = document.getElementById("categoriaCards");
+
+  wrap.innerHTML = CATEGORIAS.map((cat) => {
+    const capa = PRODUTOS.find((p) => p.categoria === cat.id)?.imagem || "";
+    return `
+      <button class="categoria-card" data-categoria="${cat.id}">
+        <img src="${capa}" alt="${cat.nome}" loading="lazy" width="600" height="450" />
+        <span>${cat.nome}</span>
+      </button>
+    `;
+  }).join("");
 
   wrap.addEventListener("click", (e) => {
-    const btn = e.target.closest(".filtro-btn");
+    const btn = e.target.closest(".categoria-card");
     if (!btn) return;
-    wrap.querySelectorAll(".filtro-btn").forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-    renderProdutos(btn.getAttribute("data-categoria"));
+    selecionarCategoria(btn.getAttribute("data-categoria"));
   });
 }
 
 /* --------------------------------------------------------------------------
-   Renderização do grid de produtos + navegação por abas (JS puro).
-   Nenhuma categoria fica selecionada por padrão: as fotos só aparecem
-   depois que o usuário clica em uma aba, e nunca mostram mais de uma
-   categoria ao mesmo tempo.
+   Seleciona uma categoria: marca o card ativo, renderiza as fotos dela e
+   revela a seção de resultado (que fica escondida até o primeiro clique).
    -------------------------------------------------------------------------- */
-function renderProdutos(categoriaAtiva) {
+function selecionarCategoria(categoriaId) {
+  const cartao = document.querySelector(`.categoria-card[data-categoria="${categoriaId}"]`);
+  if (!cartao) return;
+
+  document.querySelectorAll(".categoria-card.active").forEach((c) => c.classList.remove("active"));
+  cartao.classList.add("active");
+
+  const categoria = CATEGORIAS.find((c) => c.id === categoriaId);
+  const nomeCategoria = categoria?.nome || categoriaId;
+  const resultado = document.getElementById("categoriaResultado");
+  const titulo = document.getElementById("categoriaResultadoTitulo");
+  const nota = document.getElementById("categoriaResultadoNota");
   const grid = document.getElementById("produtosGrid");
   const vazio = document.getElementById("produtosVazio");
 
-  if (!categoriaAtiva) {
-    grid.innerHTML = "";
-    vazio.textContent = "Escolha uma categoria acima para ver as fotos dos produtos.";
-    vazio.style.display = "block";
-    return;
+  titulo.textContent = nomeCategoria;
+  resultado.classList.add("visivel");
+
+  // Nota opcional por categoria (ex.: aviso de que as fotos são modelos ilustrativos).
+  if (categoria?.notaTitulo) {
+    nota.innerHTML = `<strong>${categoria.notaTitulo}</strong><p>${categoria.notaTexto}</p>`;
+    nota.style.display = "block";
+  } else {
+    nota.innerHTML = "";
+    nota.style.display = "none";
   }
 
-  const lista = PRODUTOS.filter((p) => p.categoria === categoriaAtiva);
-
+  const lista = PRODUTOS.filter((p) => p.categoria === categoriaId);
   vazio.textContent = "Nenhuma foto cadastrada nessa categoria ainda.";
   vazio.style.display = lista.length ? "none" : "block";
+  grid.innerHTML = lista.map(criarCardProduto).join("");
 
-  grid.innerHTML = lista
-    .map((p) => {
-      const nomeCategoria =
-        CATEGORIAS.find((c) => c.id === p.categoria)?.nome || p.categoria;
-      const mensagem = `Olá! Tenho interesse na peça "${p.nome}" do catálogo da Benetextil. Poderiam me passar mais informações?`;
-      const linkWpp = montarLinkWhatsapp(mensagem);
-
-      return `
-        <article class="produto-card">
-          <div class="produto-media">
-            <img src="${p.imagem}" alt="${p.nome}" loading="lazy" width="800" height="1000" />
-          </div>
-          <div class="produto-info">
-            <span class="produto-categoria">${nomeCategoria}</span>
-            <h3 class="produto-nome">${p.nome}</h3>
-            <p class="produto-tecido">${p.tecido}</p>
-            <a class="btn btn-whatsapp btn-sm" href="${linkWpp}" target="_blank" rel="noopener">
-              Pedir no WhatsApp
-            </a>
-          </div>
-        </article>
-      `;
-    })
-    .join("");
+  resultado.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 /* --------------------------------------------------------------------------
@@ -255,17 +320,63 @@ function initFaq() {
 }
 
 /* --------------------------------------------------------------------------
+   Modal de produto (lightbox) — abre ao clicar em qualquer card de produto
+   (imagem ou card inteiro), em qualquer grid da página.
+   -------------------------------------------------------------------------- */
+function abrirProdutoModal(produtoId) {
+  const p = PRODUTOS.find((item) => item.id === produtoId);
+  if (!p) return;
+
+  const nomeCategoria = CATEGORIAS.find((c) => c.id === p.categoria)?.nome || p.categoria;
+  const mensagem = `Olá! Tenho interesse na peça "${p.nome}" do catálogo da Benetextil. Poderiam me passar mais informações?`;
+
+  const img = document.getElementById("produtoModalImg");
+  img.src = p.imagem;
+  img.alt = p.nome;
+  document.getElementById("produtoModalCategoria").textContent = nomeCategoria;
+  document.getElementById("produtoModalNome").textContent = p.nome;
+  document.getElementById("produtoModalTecido").textContent = p.tecido;
+  document.getElementById("produtoModalWpp").setAttribute("href", montarLinkWhatsapp(mensagem));
+
+  const modal = document.getElementById("produtoModal");
+  modal.classList.add("aberto");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function fecharProdutoModal() {
+  const modal = document.getElementById("produtoModal");
+  modal.classList.remove("aberto");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function initProdutoModal() {
+  document.getElementById("produtoModalFechar").addEventListener("click", fecharProdutoModal);
+  document.getElementById("produtoModalBackdrop").addEventListener("click", fecharProdutoModal);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") fecharProdutoModal();
+  });
+
+  // Delegação de evento: funciona em qualquer grid de produtos da página,
+  // inclusive os que forem renderizados depois (troca de categoria etc.).
+  document.addEventListener("click", (e) => {
+    const card = e.target.closest(".produto-card");
+    if (!card) return;
+    if (e.target.closest(".btn-whatsapp")) return; // botão de WhatsApp continua funcionando normalmente
+    abrirProdutoModal(card.getAttribute("data-produto-id"));
+  });
+}
+
+/* --------------------------------------------------------------------------
    Botões dos blocos de destaque — pré-selecionam a categoria no catálogo
    -------------------------------------------------------------------------- */
 function initFiltroScroll() {
   document.querySelectorAll(".filtro-scroll").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const categoria = btn.getAttribute("data-categoria");
-      const filtroBtn = document.querySelector(`.filtro-btn[data-categoria="${categoria}"]`);
-      if (!filtroBtn) return;
-      document.querySelectorAll(".filtro-btn").forEach((b) => b.classList.remove("active"));
-      filtroBtn.classList.add("active");
-      renderProdutos(categoria);
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      selecionarCategoria(btn.getAttribute("data-categoria"));
     });
   });
 }
@@ -312,10 +423,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("anoAtual").textContent = new Date().getFullYear();
 
   preencherLinksGenericos();
-  renderFiltros();
-  renderProdutos();
+  renderCategoriaCards();
   initFaq();
   initNavToggle();
   initFiltroScroll();
+  initProdutoModal();
   initReveal();
 });
