@@ -31,6 +31,7 @@ const CATEGORIAS = [
   { id: "polos", nome: "Polos" },
   { id: "jaquetas", nome: "Jaquetas Personalizadas" },
   { id: "domas", nome: "Domas" },
+  { id: "gola-v", nome: "Gola V" },
 ];
 
 const PRODUTOS = [
@@ -153,11 +154,11 @@ const PRODUTOS = [
   },
   {
     id: "personalizado-04",
-    nome: "Jaqueta Cinza Personalizada",
-    categoria: "jaquetas",
+    nome: "Camisa Polo Personalizada Cinza",
+    categoria: "polos",
     // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
     // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
-    tecido: "Exemplo de estilo de personalização: jaqueta corporativa com gola contrastante e logo bordado.",
+    tecido: "Exemplo de estilo de personalização: polo piquet cinza com gola contrastante e logo bordado.",
     imagem: "images/produtos/personalizado-04-jaqueta-cinza.jpg",
   },
   {
@@ -181,7 +182,7 @@ const PRODUTOS = [
   {
     id: "personalizado-18",
     nome: "Jaleco de Trabalho Personalizado Cinza",
-    categoria: "domas",
+    categoria: "gola-v",
     // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
     // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
     tecido: "Exemplo de estilo de personalização: jaleco de trabalho cinza com gola contrastante, bolso e logo estampado.",
