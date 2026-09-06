@@ -162,15 +162,6 @@ const PRODUTOS = [
     imagem: "images/produtos/personalizado-04-jaqueta-cinza.jpg",
   },
   {
-    id: "personalizado-14",
-    nome: "Jaleco de Cozinha Personalizado (Verso)",
-    categoria: "domas",
-    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
-    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
-    tecido: "Exemplo de estilo de personalização: jaleco de cozinha com logo estampado nas costas.",
-    imagem: "images/produtos/personalizado-14-jaleco-cozinha-verso.jpg",
-  },
-  {
     id: "personalizado-15",
     nome: "Jaleco de Cozinha Personalizado (Frente)",
     categoria: "domas",
@@ -178,6 +169,15 @@ const PRODUTOS = [
     // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
     tecido: "Exemplo de estilo de personalização: jaleco de cozinha com detalhes em vivo e logo bordado.",
     imagem: "images/produtos/personalizado-15-jaleco-cozinha-frente.jpg",
+  },
+  {
+    id: "personalizado-14",
+    nome: "Jaleco de Cozinha Personalizado (Verso)",
+    categoria: "domas",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: jaleco de cozinha com logo estampado nas costas.",
+    imagem: "images/produtos/personalizado-14-jaleco-cozinha-verso.jpg",
   },
   {
     id: "personalizado-18",
