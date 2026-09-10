@@ -81,6 +81,24 @@ const PRODUTOS = [
     imagem: "images/produtos/personalizado-10-formatura-frente-azul.jpg",
   },
   {
+    id: "personalizado-20",
+    nome: "Moletom de Formatura Personalizado (Verso Verde)",
+    categoria: "moletons",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: moletom preto de turma/formatura com estampa grafite nas costas e forro estampado no capuz.",
+    imagem: "images/produtos/personalizado-20-moletom-formatura-verde.jpg",
+  },
+  {
+    id: "personalizado-21",
+    nome: "Moletom Meio Zíper Personalizado Marinho",
+    categoria: "moletons",
+    // Imagem gerada por IA (simulação), não é foto de uma peça já produzida.
+    // TODO: confirmar tecido/composição real e, se possível, substituir por foto real.
+    tecido: "Exemplo de estilo de personalização: moletom meio zíper marinho com gola e punhos contrastantes e logo estampado.",
+    imagem: "images/produtos/personalizado-21-meio-ziper-marinho.jpg",
+  },
+  {
     id: "personalizado-11",
     nome: "Camiseta Personalizada Branca",
     categoria: "camisetas-igreja",
