@@ -1,0 +1,12 @@
+services:
+  catalogo:
+    build: .
+    container_name: benetextil-catalogo
+    ports:
+      - "8080:80"
+    # Monta a pasta do projeto dentro do container: qualquer edição feita no
+    # editor (na máquina de quem estiver programando) aparece na hora, sem
+    # precisar rebuildar a imagem — é só dar refresh no navegador.
+    volumes:
+      - .:/usr/share/nginx/html:ro
+    restart: unless-stopped
