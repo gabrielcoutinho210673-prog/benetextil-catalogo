@@ -31,7 +31,7 @@ const CATEGORIAS = [
   { id: "polos", nome: "Polos" },
   { id: "jaquetas", nome: "Jaquetas Personalizadas" },
   { id: "domas", nome: "Domas" },
-  { id: "gola-v", nome: "Gola V" },
+  { id: "gola-v", nome: "Gola Italiana" },
 ];
 
 const PRODUTOS = [
